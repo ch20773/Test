@@ -16,10 +16,25 @@
 //     '202012' : 930,
 // };
 
-class Budget {
-    yearMouth;
-    amount;
+ class Budget {
+     yearMouth;
+     amount;
+    constructor(yearMouth , amount) {
+        this.yearMouth = yearMouth;
+        this.amount = amount;
+    }
+
+    getYearMouth() {
+        return this.yearMouth;
+    }
+
+    getAmount() {
+        return this.amount;
+    }
+
 }
+
+module.exports = Budget;
 
 class BudgetFactory {
     static createBudge(dataList) {
